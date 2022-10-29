@@ -1,6 +1,9 @@
 FROM python:3.8-slim-buster
-ADD requirements.txt /
+EXPOSE 5000/tcp
+ADD Docker/ /
 RUN pip install -r requirements.txt
 ADD app.py /
-EXPOSE 5000/tcp
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+RUN apt-get -y install nginx
+COPY nginx.conf /etc/nginx
+RUN chmod +x ./start.sh
+CMD ["./start.sh"]
