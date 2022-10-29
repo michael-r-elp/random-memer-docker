@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 service nginx start
 
