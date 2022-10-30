@@ -31,7 +31,7 @@ def get_new_memes():
             imgs.append(img)
     url = 'https://www.memedroid.com/memes/tag/programmers'
     response = requests.get(url)
-	soup = BeautifulSoup(response.content, 'lxml')
+    soup = BeautifulSoup(response.content, 'lxml')
     divs = soup.find_all('div', class_='item-aux-container')
     response = requests.get(url)
     for div in divs:
@@ -40,7 +40,7 @@ def get_new_memes():
             imgs.append(img)
     url = 'https://www.memedroid.com/user/view/System32Comics'
     response = requests.get(url)
-	soup = BeautifulSoup(response.content, 'lxml')
+    soup = BeautifulSoup(response.content, 'lxml')
     divs = soup.find_all('div', class_='item-aux-container')
     response = requests.get(url)
     for div in divs:
