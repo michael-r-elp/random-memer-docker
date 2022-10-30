@@ -36,6 +36,13 @@ def get_new_memes():
         img = div.find('img')['src']
         if img.startswith('http') and img.endswith('jpeg'):
             imgs.append(img)
+    url = 'https://www.memedroid.com/user/view/System32Comics'
+    divs = soup.find_all('div', class_='item-aux-container')
+    response = requests.get(url)
+    for div in divs:
+        img = div.find('img')['src']
+        if img.startswith('http') and img.endswith('jpeg'):
+            imgs.append(img)
     return imgs
 
 
