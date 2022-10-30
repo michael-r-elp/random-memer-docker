@@ -1,6 +1,7 @@
 Flask>=2.2.2
 uWSGI==2.0.21
 requests>=2.22.0
+grequests>=0.6.0
 bs4>=0.0.1
 Pillow>=5.4.1
 gunicorn>=20.0.4
