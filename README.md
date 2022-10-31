@@ -12,8 +12,8 @@ You can also use this with `img` tag in your website and it will display a rando
 
 ### Usage Notes:
 
-* The API is deployed on Heroku free dyno which provides certain number of free compute hours per month, so app might stop working at the end of the month. You can deploy your own instance of the app on Heroku for free and use that.
-* The API is deployed on the free dyno provided by Heroku, which shuts-down if there is no request to it for some time, so sometimes it might take some time to load the image from the URL.
+* The API is deployed on a Docker host which itself is installed on an Oracle Cloud Free Compute VM. You can deploy your own instance of the app as an Docker container.
+* A premade docker image is not available for download, you'll have to build one yourself
 
 ### Credits
 This is a fork of [techytushar/random-memer](https://github.com/techytushar/random-memer)
