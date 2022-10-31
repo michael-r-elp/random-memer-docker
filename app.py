@@ -29,9 +29,9 @@ def get_new_memes():
     """
 
     urls = [
-        f'https://www.memedroid.com/memes/tag/programming?page={random.randrange(3)}',
+        f'https://www.memedroid.com/memes/tag/programming?page={random.randrange(1,3)}',
         'https://www.memedroid.com/memes/tag/programmers',
-        f'https://www.memedroid.com/user/view/System32Comics?page={random.randrange(6)}'
+        f'https://www.memedroid.com/user/view/System32Comics?page={random.randrange(1,6)}'
     ]
     
     imgs = []
