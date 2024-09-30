@@ -1,5 +1,10 @@
 # Random Memer Docker
 
+# IMPORTANT: No longer working as cloudflare seems to block requests to memedroid coming from this application
+
+As of now I have not found a fix or an alternative site to pull memes from.
+
+
 Flask API to return random [programming](https://www.memedroid.com/memes/tag/programming) and [programmers](https://www.memedroid.com/memes/tag/programmers) meme images as well as [System32Comics](https://www.memedroid.com/user/view/System32Comics) scrapped from [Memedroid](https://www.memedroid.com/).
 
 To use just send a GET request to https://random-memer.elp.quest/
